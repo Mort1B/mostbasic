@@ -1,0 +1,9 @@
+FROM rust:1.63
+
+WORKDIR /rust/restapi
+
+COPY . .
+
+RUN rustup default nightly-2021-05-18 
+
+CMD [ "restapi" ]
